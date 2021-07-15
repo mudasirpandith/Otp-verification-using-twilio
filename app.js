@@ -2,8 +2,8 @@ const express=require('express')
 const bodyParser=require('body-parser')
 var twilio = require('twilio');
 const app=express()
- var accountSid = 'ACeccdfcbf20358f976b4529c9eec41c3c'; // Your Account SID from www.twilio.com/console
-var authToken = '17384c19f98823727f523b9a8501e282';   // Your Auth Token from www.twilio.com/console
+ var accountSid = '****Ceccdfcb**************529c9eec41c3c'; // Your Account SID from www.twilio.com/console
+var authToken = '****7384c19*****************b9a8501e282';   // Your Auth Token from www.twilio.com/console
 var client = new twilio(accountSid, authToken);
 var ph;
 var code;
@@ -22,7 +22,7 @@ app.post('/',(req,res)=>{
 
 client
 .verify
-.services('VAaa06ff052d185880b20b277e9068df6f')
+.services('****6ff052d*******0b277e9068df6f')
 .verifications
 .create({
     to:code+ph,
@@ -39,7 +39,7 @@ client
 app.post('/signin/result',(req,res)=>{
   client
   .verify
-  .services('VAaa06ff052d185880b20b277e9068df6f')
+  .services('*******6ff0***********7e9**df6f')
   .verificationChecks
   .create({
     to:code+ph,
