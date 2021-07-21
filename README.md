@@ -1,3 +1,3 @@
 # Otp-verification-using-twilio
-Api keys not supported to expose on git.
+ use own Api key.
 works fine
